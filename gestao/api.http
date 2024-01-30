@@ -1,0 +1,29 @@
+###
+POST http://localhost:3000/livros/novoLivro
+Content-Type: application/json
+
+{ 
+    "id": "2",
+    "titulo": "O mal nosso de cada dia ",
+    "autor":  "Daniel Sampaio",
+    "ano_publicacao": "2021"
+
+
+}
+
+###
+
+ GET http://localhost:3000/livros/listarLivros
+
+ ###
+ DELETE http://localhost:3000/livros/deletarLivro/2
+
+###
+PUT http://localhost:3000/livros/editarLivro/4
+Content-Type: application/json
+
+{ 
+    "titulo": "A trança do rei careca",
+    "autor":  "Daniel Sampaio",
+    "ano_publicacao": "2022"
+}
